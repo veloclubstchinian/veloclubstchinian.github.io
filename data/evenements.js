@@ -9,41 +9,41 @@ const evenementsData = [
     "nom": "XCO",
     "date": "27 SEPTEMBRE 2026",
     "photos": [
-      "assets/images/uploads/VELO CLUB ST CHINIAN_1.jpg",
-      "assets/images/uploads/XCO 2026_2.JPG"
+      "assets/images/EVENEMENT/VELO CLUB ST CHINIAN_1.jpg",
+      "assets/images/EVENEMENT/XCO 2026_2.JPG"
     ],
     "pdfs": [
       {
         "nom": "Pre-licencies",
-        "fichier": "assets/documents/uploads/resultat_Pre-licencies.pdf"
+        "fichier": "assets/pdf/resultat_Pre-licencies.pdf"
       },
       {
         "nom": "Résultat U09",
-        "fichier": "assets/documents/uploads/resultat_U09.pdf"
+        "fichier": "assets/pdf/resultat_U09.pdf"
       },
       {
         "nom": "Résultat U11",
-        "fichier": "assets/documents/uploads/resultat_U11.pdf"
+        "fichier": "assets/pdf/resultat_U11.pdf"
       },
       {
         "nom": "Résultat U13",
-        "fichier": "assets/documents/uploads/resultat_U13.pdf"
+        "fichier": "assets/pdf/resultat_U13.pdf"
       },
       {
         "nom": "Résultat U15",
-        "fichier": "assets/documents/uploads/resultat_U15.pdf"
+        "fichier": "assets/pdf/resultat_U15.pdf"
       },
       {
         "nom": "Résultat U17-U19F",
-        "fichier": "assets/documents/uploads/resultat_U17-U19F.pdf"
+        "fichier": "assets/pdf/resultat_U17-U19F.pdf"
       },
       {
         "nom": "Résultat U19H - Masters40-50",
-        "fichier": "assets/documents/uploads/resultat_U19H-Masters40-50.pdf"
+        "fichier": "assets/pdf/resultat_U19H-Masters40-50.pdf"
       },
       {
         "nom": "Résultat U23-Elite-Masters35",
-        "fichier": "assets/documents/uploads/resultat_U23-Elite-Masters35.pdf"
+        "fichier": "assets/pdf/resultat_U23-Elite-Masters35.pdf"
       }
     ]
   },
