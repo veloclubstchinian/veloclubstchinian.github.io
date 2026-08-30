@@ -92,6 +92,34 @@
         }
 
         /**
+         * Normalise les chemins d'accès aux fichiers PDF
+         */
+        function normalizePdfPath(pdf) {
+            if (!pdf) return '';
+            let cleaned = String(pdf).trim().replace(/^['"]|['"]$/g, '');
+            cleaned = cleaned.replace(/\\/g, '/');
+
+            if (!cleaned) return '';
+
+            if (/^[a-zA-Z]:\//.test(cleaned) ||
+                cleaned.startsWith('http://') ||
+                cleaned.startsWith('https://') ||
+                cleaned.startsWith('/')) {
+                return cleaned;
+            }
+
+            if (cleaned.startsWith('../') || cleaned.startsWith('./')) {
+                return cleaned;
+            }
+
+            if (cleaned.startsWith('assets/')) {
+                return `../${cleaned}`;
+            }
+
+            return `../assets/documents/uploads/${cleaned}`;
+        }
+
+        /**
          * Affichage dynamique des événements
          */
         document.addEventListener("DOMContentLoaded", () => {
@@ -129,6 +157,33 @@
                         
                         ${event.description ? `<p style="margin-bottom:12px;">${event.description}</p>` : ''}
                         ${event.rendezVous ? `<p style="margin-bottom:12px;"><strong>Rendez-vous :</strong> ${event.rendezVous}</p>` : ''}
+
+                        ${event.lienGps ? `
+                            <a href="${event.lienGps}" target="_blank" rel="noopener" class="btn-pdf" style="margin-bottom:15px;">
+                                <i class="fa-solid fa-link"></i> ${event.lienTexte || 'Voir le lien'}
+                            </a>
+                        ` : ''}
+
+                        ${event.pdf && !Array.isArray(event.pdfs) ? `
+                            <a href="${normalizePdfPath(event.pdf)}" target="_blank" rel="noopener" class="btn-pdf" style="margin-bottom:15px; margin-left:10px;">
+                                <i class="fa-solid fa-file-pdf"></i> Voir le document PDF
+                            </a>
+                        ` : ''}
+
+                        ${Array.isArray(event.pdfs) && event.pdfs.length > 0 ? `
+                            <div class="pdf-links" style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:15px;">
+                                ${event.pdfs.map((pdf) => {
+                                    const isObj = pdf && typeof pdf === 'object';
+                                    const fichier = isObj ? pdf.fichier : pdf;
+                                    const nom = isObj && pdf.nom ? pdf.nom : 'Voir le document PDF';
+                                    return `
+                                    <a href="${normalizePdfPath(fichier)}" target="_blank" rel="noopener" class="btn-pdf">
+                                        <i class="fa-solid fa-file-pdf"></i> ${nom}
+                                    </a>
+                                `;
+                                }).join('')}
+                            </div>
+                        ` : ''}
 
                         ${photos.length > 0 ? `
                             <div class="sortie-photos">
