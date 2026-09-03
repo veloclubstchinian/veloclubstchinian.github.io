@@ -9,12 +9,13 @@ const evenementsData = [
     "nom": "XCO",
     "date": "27 SEPTEMBRE 2026",
     "photos": [
-      "assets/images/EVENEMENT/VELO CLUB ST CHINIAN.jpg",
+      "assets/images/EVENEMENT/POSTER XCO 2026.png",
       "assets/images/EVENEMENT/XCO 2026.JPG"
     ],
+    "description": "TOUTES CATEGORIES",
     "pdfs": [
       {
-        "nom": "Pre-licencies",
+        "nom": "Résultat Pré Licenciés",
         "fichier": "assets/pdf/resultat_Pre-licencies.pdf"
       },
       {
@@ -34,15 +35,15 @@ const evenementsData = [
         "fichier": "assets/pdf/resultat_U15.pdf"
       },
       {
-        "nom": "Résultat U17-U19F",
+        "nom": "Résultat U17 - U19 F",
         "fichier": "assets/pdf/resultat_U17-U19F.pdf"
       },
       {
-        "nom": "Résultat U19H - Masters40-50",
+        "nom": "Résultat U19H - Masters 40-50",
         "fichier": "assets/pdf/resultat_U19H-Masters40-50.pdf"
       },
       {
-        "nom": "Résultat U23-Elite-Masters35",
+        "nom": "Résultat U23 - Elite - Masters 35",
         "fichier": "assets/pdf/resultat_U23-Elite-Masters35.pdf"
       }
     ]
