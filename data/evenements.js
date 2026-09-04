@@ -45,6 +45,10 @@ const evenementsData = [
       {
         "nom": "Résultat U23 - Elite - Masters 35",
         "fichier": "assets/pdf/resultat_U23-Elite-Masters35.pdf"
+      },
+      {
+        "nom": "Règlement XCO 2026",
+        "fichier": "assets/pdf/reglement XCO 2026.pdf"
       }
     ]
   },
