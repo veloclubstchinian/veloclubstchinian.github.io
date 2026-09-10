@@ -53,6 +53,22 @@ const evenementsData = [
     ]
   },
   {
+    "nom": "A VELO CHEZ L'AGRICULTEUR",
+    "date": "27 SEPTEMBRE 2026 de 9 H à 12 H 30",
+    "photos": [
+      "assets/images/EVENEMENT/affiche_agriculteur.png"
+    ],
+    "description": "Découverte d'un Vélo à Assistance Electrique - Rencontre avec une exploitation agricole - Retour par le marché de St Chinian et dégustation de fromage de chèvre - Visite de la Cave de St Chinian avec une dégustation de vin.",
+    "distance": "Environ 20 KM",
+    "difficulte": "Facile",
+    "pdfs": [
+      {
+        "nom": "Programme en PDF",
+        "fichier": "assets/pdf/affiche agriculteur.pdf"
+      }
+    ]
+  },
+  {
     "nom": "MARCHE DE NOEL SAINT CHINIAN",
     "date": "6 DECEMBRE 2026",
     "photos": []
