@@ -35,20 +35,20 @@ const evenementsData = [
         "fichier": "assets/pdf/resultat_U15.pdf"
       },
       {
-        "nom": "Résultat U17 - U19 F",
-        "fichier": "assets/pdf/resultat_U17-U19F.pdf"
-      },
-      {
-        "nom": "Résultat U19H - Masters 40-50",
+        "nom": "Résultat U19H - Masters 40-50 - Dame  moins de 50",
         "fichier": "assets/pdf/resultat_U19H-Masters40-50.pdf"
       },
       {
-        "nom": "Résultat U23 - Elite - Masters 35",
+        "nom": "Résultat U23  H - Elite H - Masters H 35",
         "fichier": "assets/pdf/resultat_U23-Elite-Masters35.pdf"
       },
       {
         "nom": "Règlement XCO 2026",
         "fichier": "assets/pdf/reglement XCO 2026.pdf"
+      },
+      {
+        "nom": "Résultat U17 - U19 F - Master H 60 - Master D 50 & +",
+        "fichier": "assets/pdf/resultat_U17-U19F - Master H 60 - Master D 50 & +.pdf"
       }
     ]
   },
