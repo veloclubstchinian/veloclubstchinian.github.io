@@ -1,23 +1,18 @@
 const evenements = [
   {
-    "jourHeure": "05 sept 26 à 13 h 45",
-    "type": "Reprise + Cour d'essai gratuit",
+    "jourHeure": "3 oct  26 à 13 H 45",
+    "type": "Sortie Ecole VTT",
     "rendezVous": "Saint Chinian"
   },
   {
-    "jourHeure": "12 sept 26 à 13 h 45",
-    "type": "Reprise + Cour d'essai gratuit",
-    "rendezVous": "Saint Chinian"
+    "jourHeure": "10 oct 26 à 13 h 45",
+    "type": "Sortie Ecole VTT",
+    "rendezVous": "Réals Cessenon"
   },
   {
-    "jourHeure": "19 sept 26 à 13 h 45",
-    "type": "Cour d'essai Gratuit + Cour de préparation pour le XCO de Saint Chinian",
-    "rendezVous": "Saint Chinian"
-  },
-  {
-    "jourHeure": "26 sept 26 à 13 h 45",
-    "type": "Dernier cour d'essai + Cour de préparation pour le XCO",
-    "rendezVous": "Saint Chinian"
+    "jourHeure": "24 - 25 oct 26",
+    "type": "Week End VTT Groupe Noir et Certain Rouge.",
+    "rendezVous": "Millau"
   }
 ];
 
